@@ -79,10 +79,8 @@ function selectedAnswer(e) {
   } else {
     selectedBtn.classList.add("incorrect");
   }
-  console.log(isCorrect);
   Array.from(answerButtons.children).forEach((btn) => {
     if (btn.dataset.correct === "true") {
-      console.log("Lalaa" + "Here");
       btn.classList.add("correct");
     }
     btn.disabled = true;
